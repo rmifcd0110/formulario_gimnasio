@@ -66,3 +66,7 @@ input[type="reset"]:focus {
     outline: 2px solid #333;
 }
 
+.botones{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,8 +1,9 @@
 // Evento onsubmit para validar y mostrar un mensaje personalizado
 document.getElementById("formularioGimnasio").onsubmit = function (event) {
-    let nombre = document.getElementById("nombre").ariaValueMax;
+    let nombre = document.getElementById("nombre").value;
     if(nombre === ""){
         alert("Por favor, ingrese el nombre completo");
+        event.preventDefault(); // Evita que evíe el formulario
     } else {
         alert("Inscripción realiada con éxito!");
     }
